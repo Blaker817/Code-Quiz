@@ -34,9 +34,11 @@ var questionContainer = document.getElementById('question-container')
 var optionsContainer = document.getElementById('options-container')
 var timerContainer = document.getElementById('timer-container')
 var timerInterval
+var instructions = document.getElementById("instructions")
 
 startBtn.addEventListener('click', function() {
     startBtn.setAttribute('class', 'hidden')
+    instructions.setAttribute("class", "hidden")
     displayQuestionOne()
     displayTime(60)
     startTime()
